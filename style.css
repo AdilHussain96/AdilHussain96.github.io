@@ -536,6 +536,10 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
+.detail-section {
+  border-top: 1px solid var(--line);
+}
+
 .publication-groups {
   display: grid;
   gap: 16px;
@@ -608,6 +612,14 @@ h3 {
 
 .citation-list li {
   padding-left: 8px;
+}
+
+.citation-list.compact-list {
+  gap: 11px;
+}
+
+.citation-list.compact-list li {
+  line-height: 1.55;
 }
 
 .citation-list li::marker {
