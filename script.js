@@ -1,6 +1,13 @@
 document.documentElement.classList.add("js");
 
 const revealItems = document.querySelectorAll(".reveal");
+const hashTarget = window.location.hash
+  ? document.querySelector(window.location.hash)
+  : null;
+
+if (hashTarget && hashTarget.classList.contains("reveal")) {
+  hashTarget.classList.add("is-visible");
+}
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
@@ -18,7 +25,11 @@ if ("IntersectionObserver" in window) {
     }
   );
 
-  revealItems.forEach((item) => observer.observe(item));
+  revealItems.forEach((item) => {
+    if (!item.classList.contains("is-visible")) {
+      observer.observe(item);
+    }
+  });
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
