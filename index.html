@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -23,7 +24,7 @@
   </header>
 
   <main id="top">
-    <section class="hero section">
+    <section class="hero section reveal">
       <div class="hero-copy">
         <p class="eyebrow">AI Researcher - Biomedical Engineering - Digital Health</p>
         <h1>Building interpretable AI for clinical and biomedical applications.</h1>
@@ -32,6 +33,20 @@
           and a Marie Sklodowska-Curie Actions Fellow. My work connects computer vision, biomedical imaging,
           voice biomarkers, NLP, multimodal learning, and explainable AI for real-world healthcare challenges.
         </p>
+        <div class="metric-strip" aria-label="Professional highlights">
+          <div>
+            <strong>20+</strong>
+            <span>publications</span>
+          </div>
+          <div>
+            <strong>4+</strong>
+            <span>years R&amp;D</span>
+          </div>
+          <div>
+            <strong>EU</strong>
+            <span>MSCA fellow</span>
+          </div>
+        </div>
         <div class="hero-actions">
           <a class="button primary" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
           <a class="button secondary" href="mailto:syedadil.hussain96@gmail.com">Email Me</a>
@@ -44,10 +59,15 @@
           <p class="profile-role">Artificial Intelligence Researcher</p>
           <p class="profile-meta">GPI S.p.A. - Trento, Italy</p>
         </div>
+        <div class="focus-list" aria-label="Research focus">
+          <span>Explainable AI</span>
+          <span>Digital Health</span>
+          <span>Biomedical Imaging</span>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section split-section">
+    <section id="about" class="section split-section reveal">
       <div>
         <p class="eyebrow">About</p>
         <h2>Research-focused, product-minded AI for healthcare.</h2>
@@ -65,7 +85,7 @@
       </div>
     </section>
 
-    <section id="expertise" class="section">
+    <section id="expertise" class="section reveal">
       <div class="section-heading">
         <p class="eyebrow">Expertise</p>
         <h2>Technical areas</h2>
@@ -86,7 +106,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="section-heading">
         <p class="eyebrow">Experience</p>
         <h2>Professional journey</h2>
@@ -118,13 +138,14 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
       <div class="section-heading">
         <p class="eyebrow">Selected Work</p>
         <h2>Research and applied AI themes</h2>
       </div>
       <div class="card-grid">
         <article class="project-card">
+          <span class="card-index">01</span>
           <h3>Interpretable Multimodal Medical AI</h3>
           <p>
             PhD research on AI-driven, interpretable pattern recognition for multimodal medical data in
@@ -133,6 +154,7 @@
           <span>PhD dissertation</span>
         </article>
         <article class="project-card">
+          <span class="card-index">02</span>
           <h3>Voice Biomarkers and Emotional Assessment</h3>
           <p>
             Research on clinical and psychological applications of voice biomarkers, vocal emotion analysis,
@@ -141,6 +163,7 @@
           <span>Digital health</span>
         </article>
         <article class="project-card">
+          <span class="card-index">03</span>
           <h3>Explainable Biomedical Image Analysis</h3>
           <p>
             CNN, optimization, and machine learning approaches for skin cancer detection, pneumonia detection,
@@ -149,6 +172,7 @@
           <span>XAI and imaging</span>
         </article>
         <article class="project-card">
+          <span class="card-index">04</span>
           <h3>Neonatal AI and IoT</h3>
           <p>
             AI methods for neonatal monitoring, motion quantification, vocal expression, and neurodevelopmental
@@ -157,6 +181,7 @@
           <span>Healthcare AI</span>
         </article>
         <article class="project-card">
+          <span class="card-index">05</span>
           <h3>PyBodyTrack</h3>
           <p>
             Open science work connected to a Python library for multi-algorithm motion quantification and
@@ -165,17 +190,18 @@
           <a href="https://github.com/bihut/PyBodyTrack.git" target="_blank" rel="noopener">View repository</a>
         </article>
         <article class="project-card">
+          <span class="card-index">06</span>
           <h3>Research-to-Product Translation</h3>
           <p>
             Prototype planning, proof-of-concept design, Jira-based project coordination, milestone tracking,
             and technical reporting for healthcare innovation.
           </p>
-          <span>R&D delivery</span>
+          <span>R&amp;D delivery</span>
         </article>
       </div>
     </section>
 
-    <section id="publications" class="section split-section">
+    <section id="publications" class="section split-section reveal">
       <div>
         <p class="eyebrow">Publications</p>
         <h2>20+ peer-reviewed publications and open science outputs.</h2>
@@ -200,7 +226,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="section-heading">
         <p class="eyebrow">Education and Service</p>
         <h2>Academic foundation</h2>
@@ -228,10 +254,10 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section contact-section reveal">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2>Let’s connect on healthcare AI, explainability, and biomedical research.</h2>
+        <h2>Let&rsquo;s connect on healthcare AI, explainability, and biomedical research.</h2>
       </div>
       <div class="contact-actions">
         <a class="button primary" href="mailto:syedadil.hussain96@gmail.com">syedadil.hussain96@gmail.com</a>
@@ -241,7 +267,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Syed Adil Hussain Shah. Built as a professional research portfolio.</p>
+    <p>&copy; 2026 Syed Adil Hussain Shah. Built as a professional research portfolio.</p>
   </footer>
 </body>
 </html>
